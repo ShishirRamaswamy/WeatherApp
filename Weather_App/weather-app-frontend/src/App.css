@@ -1,0 +1,81 @@
+/* Modern Gradient Background */
+body {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Glassmorphism Card Effect */
+.weather-card, .forecast-card, .favorites-card {
+  background: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.weather-card:hover, .forecast-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Custom Button Styles */
+.btn-primary {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: none !important;
+  border-radius: 50px !important;
+}
+
+.btn-outline-danger {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+/* Animated Weather Icon */
+.weather-icon {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Forecast Items */
+.forecast-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}
+
+/* Favorites Section */
+.favorites-card {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.favorites-card::-webkit-scrollbar {
+  width: 5px;
+}
+
+.favorites-card::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+/* Search Bar */
+.search-bar {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: none !important;
+  color: white !important;
+  border-radius: 50px !important;
+}
+
+.search-bar::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
